@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/logo.svg">
+    <title>Локации / Все локации</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__logo logo"><img class="logo__img" src="assets/img/logo.svg" alt="logo" title="logo"><span class="logo__txt">v 2.01</span>
+          </div>
+          <form action="#"> 
+            <button class="header__login"><img class="header__login-img" src="assets/img/login.svg" alt="Вход" title="Вход">
+            </button>
+          </form>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__container container">
+          <aside class="aside">
+            <ul class="aside__list">
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button"><img class="aside__img" src="assets/img/aside/Имущество.svg" alt="Имущество" title="Имущество"><span class="aside__button-txt">Имущество</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button"><img class="aside__img" src="assets/img/aside/Инвентаризация.svg" alt="Инвентаризация" title="Инвентаризация"><span class="aside__button-txt">Инвентаризация</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button"><img class="aside__img" src="assets/img/aside/Сотрудники.svg" alt="Сотрудники" title="Сотрудники"><span class="aside__button-txt">Сотрудники</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button"><img class="aside__img" src="assets/img/aside/Уведомления.svg" alt="Уведомления" title="Уведомления"><span class="aside__button-txt">Уведомления</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button active-page"><img class="aside__img" src="assets/img/aside/Локации.svg" alt="Локации" title="Локации"><span class="aside__button-txt">Локации</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <form action="#"> 
+                  <button class="aside__button"><img class="aside__img" src="assets/img/aside/Настройки.svg" alt="Настройки" title="Настройки"><span class="aside__button-txt">Настройки</span>
+                  </button>
+                </form>
+              </li>
+              <li class="aside__item">
+                <button class="aside__button toggle-menu"><img class="aside__img" src="assets/img/aside/arrow.svg" alt=" "><span class="aside__button-txt">Скрыть меню</span>
+                </button>
+              </li>
+            </ul>
+          </aside>
+          <section class="main__info info" id="info">
+            <nav class="info__nav nav">
+              <h1 class="nav__title">Локации / Все локации</h1>
+              <div class="nav__block">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <form action="#">
+                      <button class="nav__link active-page">Все локации</button>
+                    </form>
+                  </li>
+                  <li class="nav__item">
+                    <form action="#">
+                      <button class="nav__link">Импорт/Экспорт</button>
+                    </form>
+                  </li>
+                  <li class="nav__item">
+                    <form action="#">
+                      <button class="nav__link">Настройки</button>
+                    </form>
+                  </li>
+                </ul>
+                <button class="info__button add-field"><img class="add-field__img" src="assets/img/synchronization.svg" alt=" "><span class="add-field__txt">синхронизация</span><span class="add-field__date">(17.05.2024 15:23:21)</span>
+                </button>
+              </div>
+              <div class="nav__block">
+                <button class="nav__button add-field" id="addLocation"><span class="add-field__decor">+</span><span class="add-field__txt">Добавить поле</span>
+                </button>
+                <div class="nav__fields">
+                  <label class="nav__label" for="search">Поиск по точному вхождению
+                    <input class="nav__checkbox" type="checkbox" id="search" name="search" checked><span class="custom-checkbox"></span>
+                  </label><form class="nav__search search" action="/search" method="get">
+<button class="search__button" type="submit" aria-label="search"><img class="nav__img" src="assets/img/search.svg" alt=" "></button>
+<input class="search__input" type="text" name="text" placeholder="поиск">
+</form>
+                </div>
+              </div>
+            </nav>
+            <div class="nav__table-container table-container">
+              <div class="info__locations">
+                <div class="info__location location"><img class="location__img" src="assets/img/minus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Локация 1</span><span class="orange">512</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="location__sub-location location"><img class="location__img" src="assets/img/plus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Подотдел 1</span><span class="orange">10</span><span class="location-txt">Для утерь</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="location__sub-location location"><img class="location__img" src="assets/img/minus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Подотдел 2</span><span class="orange">100</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="location__sub-sub-location location"><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Подподотдел 1</span><span class="orange">2</span><span class="location-txt">Для утерь</span><span class="location-bold-txt">Без штрихкода</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="location__sub-location location"><img class="location__img" src="assets/img/plus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Подотдел 3</span><span class="orange">400</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="info__location location"><img class="location__img" src="assets/img/plus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Локация 2</span><span class="orange">100</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+                <div class="info__location location"><img class="location__img" src="assets/img/plus.svg" alt=" "><img class="location__img" src="assets/img/dots.svg" alt=" "><span class="location-name">Локация 3</span><span class="orange">100</span>
+                            <div class="location__options">
+                              <div class="location__option" onclick="editLocation()"><img class="location__img-img" src="assets/img/pen.svg" alt=" "><span class="location__option-txt orange">Редактировать</span>
+                              </div>
+                              <div class="location__option"><img class="location__img-img" src="assets/img/cross.svg" alt=" "><span class="location__option-txt red">Удалить</span>
+                              </div>
+                            </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="window-container" id="addLocationWindow">
+          <div class="window">
+            <div class="window__title">Создать локацию</div>
+            <input class="window__input" type="text" placeholder="Название">
+            <input class="window__input" type="text" placeholder="Штрихкод">
+            <input class="window__input" type="text" placeholder="RFID">
+            <input class="window__input" type="text" placeholder="Вложенность">
+            <div>
+              <input class="window__checkbox" type="checkbox" id="addOption1" name="addOption1">
+              <label class="window__label checked" for="addOption1" id="addOption1Label">Виртуальная локация
+                <div class="window__circle-container">
+                  <div class="window__circle "></div><span class="window__circle-bg"></span>
+                </div>
+              </label>
+            </div>
+            <div>
+              <input class="window__checkbox" type="checkbox" id="addOption2" name="addOption2">
+              <label class="window__label checked" for="addOption2" id="addOption2Label">Локация для утерь
+                <div class="window__circle-container">
+                  <div class="window__circle"></div><span class="window__circle-bg"></span>
+                </div>
+              </label>
+            </div>
+            <div class="window__buttons">
+              <button class="window__primary-button" onclick="cancel()"><img class="img" src="assets/img/save.svg" alt=" "><span>Создать</span>
+              </button>
+              <button class="window__button" onclick="cancel()">Отменить</button>
+            </div>
+          </div>
+        </div>
+        <div class="window-container" id="editLocationWindow">
+          <div class="window">
+            <div class="window__title">Изменить локацию %название%</div>
+            <div class="window__label-container">
+              <label class="window__label">Название</label>
+              <input class="window__input" type="text" placeholder="Название" value="Локация 11">
+            </div>
+            <div class="window__label-container">
+              <label class="window__label">Штрихкод</label>
+              <input class="window__input" type="text" placeholder="Штрихкод" value="1123123123123">
+            </div>
+            <div class="window__label-container">
+              <label class="window__label">RFID</label>
+              <input class="window__input" type="text" placeholder="RFID" value="1123123123123">
+            </div>
+            <div class="window__label-container">
+              <label class="window__label">Вложенность</label>
+              <select class="window__input">
+                <option>Локация1</option>
+              </select>
+            </div>
+            <div>
+              <input class="window__checkbox" type="checkbox" id="editOption1" name="editOption1">
+              <label class="window__label checked" for="editOption1" id="editOption1Label">Виртуальная локация
+                <div class="window__circle-container">
+                  <div class="window__circle "></div><span class="window__circle-bg"></span>
+                </div>
+              </label>
+            </div>
+            <div>
+              <input class="window__checkbox" type="checkbox" id="editOption2" name="editOption2">
+              <label class="window__label checked" for="editOption2" id="editOption2Label">Локация для утерь
+                <div class="window__circle-container">
+                  <div class="window__circle"></div><span class="window__circle-bg"></span>
+                </div>
+              </label>
+            </div>
+            <div class="window__buttons edit-window-buttons">
+              <button class="window__button" onclick="cancel()"><img class="img" src="assets/img/cross.svg" alt=" "><span>Удалить</span>
+              </button>
+              <button class="window__button" onclick="cancel()">Отменить</button>
+              <button class="window__primary-button" onclick="cancel()"><img class="img" src="assets/img/save.svg" alt=" "><span>Сохранить</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__container container">
+          <div class="footer__info footer-info">
+            <div class="footer-info__txt">Последний приём 20.09.2021 18:36:21</div>
+            <div class="footer-info__txt">Последняя передача  20.09.2021 18:38:21</div>
+          </div>
+          <button class="footer__documentation documentation"><img class="documentation__img" src="assets/img/document.svg" alt=" "><span class="documentation__txt">Документация</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="assets/js/script.js"></script>
+</html>
